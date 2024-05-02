@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+hr {
+    width: 500px;
+    height: 3px;
+    background-color: black;
+}
+
+#board {
+    width: 452px; /* Adjusted width to accommodate borders */
+    height: 452px; /* Adjusted height to accommodate borders */
+    background-color:white;
+    margin: 20px auto; /* Adjust margin to center the board vertically */
+    display: grid; /* Changed display property to grid */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
+    grid-template-rows: repeat(3, 1fr); /* 3 rows with equal height */
+    gap: 2px; /* Gap between cells */
+}
+
+.cell {
+    border: 2px solid black;
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: grey; /* Add hover effect */
+}
+
+.player-x {
+    color: #ff5e5e; /* Color for X */
+}
+
+.player-o {
+    color: #6aa6f8; /* Color for O */
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 24px;
+}
